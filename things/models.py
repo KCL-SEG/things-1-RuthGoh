@@ -13,7 +13,7 @@ class Thing(models.Model):
         unique=True,
         blank=False,
     )
-    description = models.TextField(
+    description = models.CharField(
         max_length=120,
         unique=False,
         blank=True,
@@ -24,4 +24,4 @@ class Thing(models.Model):
             MaxValueValidator(100, message='Must be <= 100.'),
             MinValueValidator(0, message='Must be >= 0.')
         ]
-    ) # includes 0
+    )
