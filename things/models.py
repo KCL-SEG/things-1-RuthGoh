@@ -3,10 +3,10 @@ from django.core.validators import MinValueValidator
 from django.core.validators import MaxValueValidator
 
 class Thing(models.Model):
-    def __init__(self, name, description, quantity):
+    """ def __init__(self, name, description, quantity):
         self.name = name
         self.description = description
-        self.quantity = quantity
+        self.quantity = quantity """
 
     name = models.CharField(
         max_length=30,
